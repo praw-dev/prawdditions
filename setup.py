@@ -3,7 +3,7 @@
 import re
 from codecs import open
 from os import path
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 PACKAGE_NAME = 'prawdditions'
@@ -35,6 +35,10 @@ setup(name=PACKAGE_NAME,
       keywords='praw additions',
       license='Simplified BSD License',
       long_description=README,
-      packages=[PACKAGE_NAME],
+      packages=find_packages(exclude=['tests', 'tests.*']),
+      setup_requires=['pytest-runner ==2.7'],
+      tests_require=['mock ==1.0.1',
+                     'pytest ==2.8.7'],
+      test_suite='tests',
       url='https://github.com/praw-dev/prawdditions',
       version=VERSION)
