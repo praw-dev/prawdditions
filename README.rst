@@ -6,7 +6,7 @@ prawdditions
            :target: https://pypi.python.org/pypi/prawdditions
 
 
-Prawdditions is a ...
+Prawdditions is an auxiliary package for the PRAW project, designed to supplement its existing functionality. Prawdditions aims to add more abstract functionality to the praw libraries that would otherwise clash with the clean design that praw 4.0.0 exhibits. An example of this is an abstracted `message` function that does not extend from a redditor or subreddit class. Prawdditions adds this functionality in a manner that doesn't explicitly require the instantiation of such objects, and will aim to build out similar such functionality in the future.
 
 
 Installation
