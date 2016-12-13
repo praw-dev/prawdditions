@@ -32,5 +32,5 @@ The following example demonstrates how to use prawdditions...
 Contact
 -------
 
-Author: Randy Goodman
+Author: Randy Goodman    
 Email: randy@kindofabigdeal.org
