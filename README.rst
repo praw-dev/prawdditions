@@ -28,6 +28,12 @@ The following example demonstrates how to use prawdditions...
 
    import praw
    import prawdditions
+   
+   #Instantiate Reddit Client
+   reddit = praw.Reddit(...)
+   
+   #Abstract message function now available.
+   reddit.message('user','subject','body')
 
 Contact
 -------
