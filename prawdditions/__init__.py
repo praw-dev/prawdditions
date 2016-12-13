@@ -1,1 +1,1 @@
-from const import __version__
+from .const import __version__
