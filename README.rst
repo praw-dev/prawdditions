@@ -28,3 +28,9 @@ The following example demonstrates how to use prawdditions...
 
    import praw
    import prawdditions
+
+Contact
+-------
+
+Author: Randy Goodman
+Email: randy@kindofabigdeal.org
