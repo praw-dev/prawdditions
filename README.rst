@@ -33,7 +33,7 @@ The following example demonstrates how to use prawdditions...
    reddit = praw.Reddit(...)
    
    #Abstract message function now available.
-   reddit.message('user','subject','body')
+   reddit.message('user_or_subreddit','subject','body')
 
 Contact
 -------
