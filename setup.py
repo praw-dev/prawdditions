@@ -16,8 +16,8 @@ with open(path.join(HERE, PACKAGE_NAME, 'const.py'),
 
 
 setup(name=PACKAGE_NAME,
-      author='NAME',
-      author_email='EMAIL',
+      author='Randall Goodman',
+      author_email='randy@kindofabigdeal.org',
       classifiers=[
           'Development Status :: 4 - Beta',
           'Intended Audience :: Developers',
