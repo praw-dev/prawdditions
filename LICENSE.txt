@@ -1,4 +1,4 @@
-Copyright (c) 2016, NAME
+Copyright (c) 2016, Randall Goodman
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
