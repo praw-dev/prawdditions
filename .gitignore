@@ -4,6 +4,7 @@
 *.pyc
 *~
 .DS_Store
+.cache/
 .coverage
 _build/
 build/
