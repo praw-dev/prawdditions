@@ -18,26 +18,9 @@ Install prawdditions using ``pip`` via:
 
     pip install prawdditions
 
-
-Usage
------
-
-The following example demonstrates how to use prawdditions...
-
-.. code-block:: python
-
-   import praw
-   import prawdditions
-   
-   #Instantiate Reddit Client
-   reddit = praw.Reddit(...)
-   
-   #Abstract message function now available.
-   reddit.message('user_or_subreddit','subject','body')
-
 Contact
 -------
 
-Author: Randy Goodman
+Author: PokestarFan
 
-Email: randy@kindofabigdeal.org
+Please file a Github Issue if you have any problems.
