@@ -4,7 +4,9 @@
 import argparse
 import sys
 from os import path
+from shutil import rmtree
 from subprocess import CalledProcessError, check_call
+from tempfile import mkdtemp
 
 current_directory = path.abspath(path.join(__file__, ".."))
 
@@ -40,6 +42,13 @@ def run_static():
     success &= do_process(["black", "."])
     success &= do_process(["flake8", "--exclude=.eggs,build,docs"])
     success &= do_process(["pydocstyle", "prawdditions"])
+    tmp_dir = mkdtemp()
+    try:
+        success &= do_process(
+            ["sphinx-build", "-W", "--keep-going", "docs", tmp_dir]
+        )
+    finally:
+        rmtree(tmp_dir)
     return success
 
 
