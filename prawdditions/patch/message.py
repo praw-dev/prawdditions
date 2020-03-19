@@ -1,3 +1,4 @@
+"""Store :func:`.message`."""
 from typing import Optional, Union
 from praw import const
 from praw.models import Message, Redditor, Subreddit
@@ -21,7 +22,7 @@ def message(
         By default the message originates from the user.
     :returns: An instance of :class:`praw.models.Message`.
 
-    example:
+    Example code:
 
     .. code-block:: python
 

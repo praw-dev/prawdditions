@@ -2,6 +2,7 @@ from praw import Reddit
 from praw.models import WikiPage
 import prawdditions.patch
 
+
 class TestPatch:
     def test_patch(self):
         prawdditions.patch.patch()

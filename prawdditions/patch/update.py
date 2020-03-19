@@ -1,3 +1,4 @@
+"""Store :func:`.update`."""
 import json
 from typing import Callable, Optional
 
@@ -15,7 +16,7 @@ def update(
         sole parameter and returning the new content.
     :param reason: (Optional) The reason for the revision.
 
-    Example:
+    Example code:
 
     .. code-block:: python
 
