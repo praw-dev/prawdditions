@@ -10,6 +10,8 @@ functions that are missing from the main package. The only dependency is PRAW.
    :maxdepth: 2
    :caption: Contents:
 
+   patch.rst
+
 
 
 References
