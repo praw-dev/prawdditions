@@ -23,7 +23,7 @@ jobs:
     - name: Run flake8
       run: flake8 --exclude docs --statistics
     - name: Run pydocstyle
-      run: pydocstyle praw
+      run: pydocstyle prawdditions
     - name: Run sphinx
       run: sphinx-build -W --keep-going docs/ /tmp/foo
     strategy:
@@ -54,7 +54,7 @@ jobs:
     - name: Run flake8
       run: flake8 --exclude docs --statistics
     - name: Run pydocstyle
-      run: pydocstyle praw
+      run: pydocstyle prawdditions
     - name: Run sphinx
       run: sphinx-build -W --keep-going docs/ /tmp/foo
     strategy:
@@ -107,7 +107,7 @@ jobs:
         pip install .[test]
         pip install https://github.com/bboe/coveralls-python/archive/github_actions.zip
     - name: Test with pytest
-      run: coverage run --source praw --module pytest
+      run: coverage run --source prawdditions --module pytest
     - name: Check coverage
       run: coverage report --fail-under=100
     strategy:
