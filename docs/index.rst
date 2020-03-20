@@ -13,6 +13,8 @@ functions that are missing from the main package. The only dependency is PRAW.
    filters.rst
    util.rst
 
+   patch.rst
+
 
 
 References
