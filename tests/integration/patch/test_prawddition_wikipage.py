@@ -22,13 +22,14 @@ class TestPrawdditionWikiPage(IntegrationTest):
         prawdditions.patch.patch()
         subreddit = self.reddit.subreddit(pytest.placeholders.test_subreddit)
         page = subreddit.wiki["praw_test_page"]
-        repeat = [True]
+        repeat = True
         self.reddit.read_only = False
 
         def update_fn(text):
-            if repeat[0]:
+            nonlocal repeat
+            if repeat:
                 page.edit("A new body")
-                repeat[0] = False
+                repeat = False
             return text + " | a suffix"
 
         with self.recorder.use_cassette(
