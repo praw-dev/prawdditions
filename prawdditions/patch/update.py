@@ -31,9 +31,8 @@ def update(
         page = next(iter(reddit.subreddit('test').wiki))
         page.update(transform)
     """
-    current_revision = next(self.revisions(limit=1))
-    revision_id = current_revision["id"]
-    content = current_revision["page"].content_md
+    revision_id = self.revision_id
+    content = self.content_md
     new_content = transformation(content)
     while True:
         try:
